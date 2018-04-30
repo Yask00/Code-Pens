@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(70, 173, 198, .9);
+    z-index: 9999998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay #modal {
+  background-color: #ffffff;
+  width: 30%;
+  height: 50%;
+  border-radius: 5px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+#modal #close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 8px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+#modal #close-modal:hover {
+    cursor: pointer;
+}

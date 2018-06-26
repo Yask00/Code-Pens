@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#wrapper {
+    background-color: rgba(32, 178, 170, 0.4);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(32, 178, 170, 0.8);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+nav ul li {
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+section {
+    display: flex;
+    padding-top: 20px;
+}
+
+section main {
+    position: relative;
+    display: flex;
+}
+
+section main .article-row {
+    box-sizing: border-box;
+    display: flex;
+}
+
+section main .article-row article {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+section main .article-row article:hover {
+    cursor: pointer;
+}
+
+section main .article-row article:hover>img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+section main .article-row article img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+section main .article-row img:hover {}
+
+section main .article-row article h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    margin: 0;
+}
+
+section aside {
+    padding-top: 20px;
+}
+
+section aside img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+    nav ul {
+        flex-flow: column nowrap;
+    }
+    section {
+        flex-flow: column nowrap;
+    }
+    section main {
+        flex: 0 0 100%;
+        flex-flow: column wrap;
+    }
+    section main .article-row {
+        flex-flow: column wrap;
+    }
+    section main .article-row article {
+        width: 300px;
+        height: 270px;
+        margin: 10px auto;
+    }
+    section aside {
+        flex: 0 0 100%;
+    }
+    section aside img {
+        /**/
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    section {
+        flex-flow: row wrap;
+    }
+    section main {
+        flex: 0 0 75%;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    section main .article-row {
+        flex: 1;
+        flex-basis: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+    section main .article-row article {
+        width: 270px;
+        height: 270px;
+        margin-left: 5px;
+    }
+    section aside {
+        flex: 0 0 25%;
+    }
+    section aside img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+    section {
+        /**/
+    }
+    section main {
+        flex: 0 0 70%;
+    }
+    section main .article-row {
+        /**/
+    }
+    section main .article-row article {
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    section aside {
+        flex: 0 0 30%;
+    }
+    section aside img {
+        /**/
+    }
+}

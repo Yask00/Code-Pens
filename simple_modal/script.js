@@ -1,6 +1,6 @@
 let close = document.getElementsByClassName('close-modal');
 let overlay = document.getElementsByClassName('overlay');
-let openModal = document.getElementsByTagName('button');
+let openModal = document.getElementsByTagName('span');
 // close.addEventListener('click', () => {
 //   overlay.style.display = `none`;
 // });

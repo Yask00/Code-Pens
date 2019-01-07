@@ -1,0 +1,32 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#pitch-box {
+    background: url("https://365psd.com/images/istock/previews/8041/80419113-vertical-realistic-football-soccer-field-illustration.jpg") no-repeat;
+    opacity: 0.9;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 700px;
+}
+
+#pitch-svg {
+    width: inherit;
+    height: inherit;
+}
+
+.nameBox {
+    width: 120px;
+    height: 30px;
+}
+
+@media (max-width: 550px) {
+    #pitch-box {
+        width: 100vw;
+    }
+    .nameBox {
+        display: none;
+    }
+}
